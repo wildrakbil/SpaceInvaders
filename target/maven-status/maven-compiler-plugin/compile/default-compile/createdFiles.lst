@@ -1,0 +1,3 @@
+com\game\galaxyInvaders\view\Home.class
+com\game\galaxyInvaders\controller\SpaceInvadersController.class
+com\game\galaxyInvaders\models\SpaceInvadersDAO.class
