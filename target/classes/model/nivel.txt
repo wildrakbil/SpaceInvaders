@@ -1,0 +1,4 @@
+level;rows;columns;liveEnemy;amountEnemies;speedEnemy;posInitX;posInitY;width;high
+1;5;10;1;50;5;40;40;12;32
+2;5;10;2;50;10;40;40;12;32
+3;5;10;3;50;15;40;40;12;32
