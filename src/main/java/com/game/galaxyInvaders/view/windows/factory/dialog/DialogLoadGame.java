@@ -3,6 +3,7 @@ package com.game.galaxyInvaders.view.windows.factory.dialog;
 import com.game.galaxyInvaders.view.WindowSingleton;
 import com.game.galaxyInvaders.view.windows.factory.button.ButtonAccept;
 import com.game.galaxyInvaders.view.windows.factory.button.ButtonCancel;
+import com.game.galaxyInvaders.view.windows.factory.button.IButton;
 import com.game.galaxyInvaders.view.windows.factory.panel.PanelLoadGame;
 import com.game.galaxyInvaders.view.windows.factory.scrollPane.ScrollPanelList;
 
@@ -29,15 +30,17 @@ public class DialogLoadGame implements IDialog, ActionListener {
 
         this._dialog.add(new ScrollPanelList(list).getScrollPane(), BorderLayout.CENTER);
 
-        JButton buttonAccept = new ButtonAccept(60, 2).getButton();
-        JButton buttonCancel = new ButtonCancel(210, 2).getButton();
+        IButton buttonAccept = new ButtonAccept(60, 2);
+        IButton buttonCancel = new ButtonCancel(210, 2);
+        buttonAccept.getButton().addActionListener(this);
+        buttonCancel.getButton().addActionListener(this);
 
-        buttonAccept.addActionListener(this);
-        buttonCancel.addActionListener(this);
+        buttonAccept.getButton().addActionListener(this);
+        buttonCancel.getButton().addActionListener(this);
 
         JPanel PanelLoadGame = new PanelLoadGame().getPanel();
-        PanelLoadGame.add(buttonAccept);
-        PanelLoadGame.add(buttonCancel);
+        PanelLoadGame.add(buttonAccept.getButton());
+        PanelLoadGame.add(buttonCancel.getButton());
 
         this._dialog.add(PanelLoadGame, BorderLayout.SOUTH);
 

@@ -1,8 +1,7 @@
 package com.game.galaxyInvaders.controller.impl;
 
-import com.game.galaxyInvaders.controller.IPlayerController;
-import com.game.galaxyInvaders.controller.state.context.AlertStateContext;
-import com.game.galaxyInvaders.models.GameContext;
+import com.game.galaxyInvaders.desacople.IPlayerController;
+import com.game.galaxyInvaders.controller.GameContext;
 import com.game.galaxyInvaders.models.Nave;
 import com.game.galaxyInvaders.models.Player;
 

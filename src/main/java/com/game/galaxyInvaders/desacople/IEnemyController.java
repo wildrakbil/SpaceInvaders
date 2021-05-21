@@ -1,4 +1,4 @@
-package com.game.galaxyInvaders.controller;
+package com.game.galaxyInvaders.desacople;
 
 import java.awt.*;
 

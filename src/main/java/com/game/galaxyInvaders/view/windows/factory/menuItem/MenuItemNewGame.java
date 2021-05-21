@@ -1,6 +1,6 @@
 package com.game.galaxyInvaders.view.windows.factory.menuItem;
 
-import com.game.galaxyInvaders.models.GameContext;
+import com.game.galaxyInvaders.controller.GameContext;
 import com.game.galaxyInvaders.view.windows.factory.dialog.DialogNewGame;
 
 import javax.swing.*;

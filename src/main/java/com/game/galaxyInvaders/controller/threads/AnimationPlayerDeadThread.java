@@ -1,7 +1,7 @@
 package com.game.galaxyInvaders.controller.threads;
 
 import com.game.galaxyInvaders.controller.util.AppSystemProperties;
-import com.game.galaxyInvaders.models.GameContext;
+import com.game.galaxyInvaders.controller.GameContext;
 
 /**
  * Created by AnDrEy on 5/19/2021.

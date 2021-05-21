@@ -3,7 +3,7 @@ package com.game.galaxyInvaders.controller.state.impl;
 import com.game.galaxyInvaders.controller.state.IAlertState;
 import com.game.galaxyInvaders.controller.state.context.AlertStateContext;
 import com.game.galaxyInvaders.controller.util.AppSystemProperties;
-import com.game.galaxyInvaders.models.GameContext;
+import com.game.galaxyInvaders.controller.GameContext;
 
 /**
  * Created by AnDrEy on 5/19/2021.

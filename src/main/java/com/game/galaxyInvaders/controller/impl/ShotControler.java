@@ -1,10 +1,10 @@
 package com.game.galaxyInvaders.controller.impl;
 
-import com.game.galaxyInvaders.controller.IShotControler;
+import com.game.galaxyInvaders.desacople.IShotControler;
 import com.game.galaxyInvaders.controller.iterator.IIterator;
 import com.game.galaxyInvaders.controller.threads.PlayerShotThread;
 import com.game.galaxyInvaders.controller.util.AppSystemProperties;
-import com.game.galaxyInvaders.models.GameContext;
+import com.game.galaxyInvaders.controller.GameContext;
 import com.game.galaxyInvaders.models.Nave;
 import com.game.galaxyInvaders.models.Shot;
 import com.game.galaxyInvaders.models.prototype.Enemy;

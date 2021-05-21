@@ -1,6 +1,6 @@
 package com.game.galaxyInvaders.controller.keyWindows;
 
-import com.game.galaxyInvaders.controller.util.MusicController;
+import com.game.galaxyInvaders.controller.MusicController;
 import com.game.galaxyInvaders.view.WindowSingleton;
 
 import java.awt.event.KeyEvent;

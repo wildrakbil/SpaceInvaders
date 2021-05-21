@@ -1,9 +1,10 @@
 package com.game.galaxyInvaders.view.windows.factory.dialog;
 
-import com.game.galaxyInvaders.controller.IPlayerController;
 import com.game.galaxyInvaders.controller.impl.PlayerController;
+import com.game.galaxyInvaders.desacople.IPlayerController;
 import com.game.galaxyInvaders.view.windows.factory.button.ButtonAccept;
 import com.game.galaxyInvaders.view.windows.factory.button.ButtonCancel;
+import com.game.galaxyInvaders.view.windows.factory.button.IButton;
 import com.game.galaxyInvaders.view.windows.factory.panel.PanelNewPlayer;
 
 import javax.swing.*;
@@ -29,11 +30,11 @@ public class DialogNewPlayer implements IDialog, ActionListener {
 
         this._dialog.getRootPane().setBorder(BorderFactory.createLineBorder(Color.WHITE));
 
-        JButton buttonAccept = new ButtonAccept(10, 300).getButton();
-        JButton buttonCancel = new ButtonCancel(10, 350).getButton();
-        buttonAccept.addActionListener(this);
-        buttonCancel.addActionListener(this);
-        JPanel newplayer = new PanelNewPlayer(buttonAccept, buttonCancel).getPanel();
+        IButton buttonAccept = new ButtonAccept(10, 300);
+        IButton buttonCancel = new ButtonCancel(10, 350);
+        buttonAccept.getButton().addActionListener(this);
+        buttonCancel.getButton().addActionListener(this);
+        JPanel newplayer = new PanelNewPlayer(buttonAccept.getButton(), buttonCancel.getButton()).getPanel();
         this._dialog.add(newplayer);
         this._dialog.setSize(this._dialog.getRootPane().getContentPane().getComponent(0).getWidth(),
                 this._dialog.getRootPane().getContentPane().getComponent(0).getHeight());

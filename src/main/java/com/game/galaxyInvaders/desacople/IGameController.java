@@ -1,4 +1,4 @@
-package com.game.galaxyInvaders.controller;
+package com.game.galaxyInvaders.desacople;
 
 import com.game.galaxyInvaders.view.windows.factory.dialog.IDialog;
 

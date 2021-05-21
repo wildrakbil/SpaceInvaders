@@ -1,6 +1,4 @@
-package com.game.galaxyInvaders.controller;
-
-import com.game.galaxyInvaders.models.prototype.Enemy;
+package com.game.galaxyInvaders.desacople;
 
 import java.awt.*;
 

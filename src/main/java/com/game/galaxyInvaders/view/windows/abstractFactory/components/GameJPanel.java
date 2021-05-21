@@ -1,10 +1,7 @@
 package com.game.galaxyInvaders.view.windows.abstractFactory.components;
 
-import com.game.galaxyInvaders.controller.*;
 import com.game.galaxyInvaders.controller.impl.*;
-import com.game.galaxyInvaders.controller.threads.EnemiesCreateShotThread;
-import com.game.galaxyInvaders.controller.threads.EnemiesShotThread;
-import com.game.galaxyInvaders.models.GameContext;
+import com.game.galaxyInvaders.desacople.*;
 
 import javax.swing.*;
 import java.awt.*;

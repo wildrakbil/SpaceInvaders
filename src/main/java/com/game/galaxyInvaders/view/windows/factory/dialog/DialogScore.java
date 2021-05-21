@@ -1,7 +1,7 @@
 package com.game.galaxyInvaders.view.windows.factory.dialog;
 
 import com.game.galaxyInvaders.view.windows.factory.button.ButtonAccept;
-import com.game.galaxyInvaders.view.windows.factory.label.LabelScoreText;
+import com.game.galaxyInvaders.view.windows.factory.button.IButton;
 import com.game.galaxyInvaders.view.windows.factory.panel.PanelScore;
 
 import javax.swing.*;
@@ -26,10 +26,10 @@ public class DialogScore implements IDialog, ActionListener {
         this._dialog.setFont(new Font("ArcadeClassic", Font.PLAIN, 20));
         this._dialog.setForeground(Color.RED);
 
-        JButton buttonAccept = new ButtonAccept(235, 360).getButton();
-        buttonAccept.addActionListener(this);
+        IButton buttonAccept = new ButtonAccept(235, 360);
+        buttonAccept.getButton().addActionListener(this);
 
-        this._dialog.add(new PanelScore(buttonAccept).getPanel());
+        this._dialog.add(new PanelScore(buttonAccept.getButton()).getPanel());
 
         this._dialog.setUndecorated(true);
         this._dialog.getRootPane().setBorder(BorderFactory.createLineBorder(Color.WHITE));

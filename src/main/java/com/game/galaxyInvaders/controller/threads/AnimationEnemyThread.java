@@ -1,10 +1,10 @@
 package com.game.galaxyInvaders.controller.threads;
 
-import com.game.galaxyInvaders.controller.IGameController;
+import com.game.galaxyInvaders.desacople.IGameController;
 import com.game.galaxyInvaders.controller.impl.GameController;
 import com.game.galaxyInvaders.controller.iterator.IIterator;
 import com.game.galaxyInvaders.controller.util.AppSystemProperties;
-import com.game.galaxyInvaders.models.GameContext;
+import com.game.galaxyInvaders.controller.GameContext;
 import com.game.galaxyInvaders.models.prototype.Calamar;
 import com.game.galaxyInvaders.models.prototype.Cangrejo;
 import com.game.galaxyInvaders.models.prototype.Enemy;

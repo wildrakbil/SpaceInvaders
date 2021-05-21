@@ -1,4 +1,4 @@
-package com.game.galaxyInvaders.controller;
+package com.game.galaxyInvaders.desacople;
 
 import com.game.galaxyInvaders.models.Nave;
 import com.game.galaxyInvaders.models.prototype.Enemy;

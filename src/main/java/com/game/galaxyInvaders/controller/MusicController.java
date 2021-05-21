@@ -1,4 +1,4 @@
-package com.game.galaxyInvaders.controller.util;
+package com.game.galaxyInvaders.controller;
 
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;

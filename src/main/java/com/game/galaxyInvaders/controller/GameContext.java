@@ -1,7 +1,9 @@
-package com.game.galaxyInvaders.models;
+package com.game.galaxyInvaders.controller;
 
 import com.game.galaxyInvaders.controller.iterator.impl.AgregateConcrete;
 import com.game.galaxyInvaders.controller.threads.*;
+import com.game.galaxyInvaders.models.Level;
+import com.game.galaxyInvaders.models.Player;
 
 import java.io.Serializable;
 

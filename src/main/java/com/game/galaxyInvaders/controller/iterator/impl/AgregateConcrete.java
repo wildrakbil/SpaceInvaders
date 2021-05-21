@@ -2,7 +2,7 @@ package com.game.galaxyInvaders.controller.iterator.impl;
 
 import com.game.galaxyInvaders.controller.iterator.IAggregate;
 import com.game.galaxyInvaders.controller.iterator.IIterator;
-import com.game.galaxyInvaders.models.GameContext;
+import com.game.galaxyInvaders.controller.GameContext;
 import com.game.galaxyInvaders.models.prototype.Calamar;
 import com.game.galaxyInvaders.models.prototype.Cangrejo;
 import com.game.galaxyInvaders.models.prototype.Enemy;

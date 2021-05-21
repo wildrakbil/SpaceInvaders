@@ -1,6 +1,6 @@
 package com.game.galaxyInvaders;
 
-import com.game.galaxyInvaders.controller.util.WindowsController;
+import com.game.galaxyInvaders.controller.WindowsController;
 
 /**
  * Created by AnDrEy on 2/19/2021.

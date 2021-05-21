@@ -1,5 +1,6 @@
-package com.game.galaxyInvaders.controller.util;
+package com.game.galaxyInvaders.controller;
 
+import com.game.galaxyInvaders.controller.util.AppSystemProperties;
 import com.game.galaxyInvaders.view.WindowSingleton;
 import com.game.galaxyInvaders.view.gameboard.GameWindow;
 import com.game.galaxyInvaders.view.windows.abstractFactory.factories.GameFactory;

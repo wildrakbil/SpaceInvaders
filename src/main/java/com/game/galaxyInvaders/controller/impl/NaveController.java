@@ -1,9 +1,8 @@
 package com.game.galaxyInvaders.controller.impl;
 
-import com.game.galaxyInvaders.controller.IGameController;
-import com.game.galaxyInvaders.controller.INaveController;
-import com.game.galaxyInvaders.controller.util.AppSystemProperties;
-import com.game.galaxyInvaders.models.GameContext;
+import com.game.galaxyInvaders.desacople.IGameController;
+import com.game.galaxyInvaders.desacople.INaveController;
+import com.game.galaxyInvaders.controller.GameContext;
 
 import javax.swing.*;
 import java.awt.*;

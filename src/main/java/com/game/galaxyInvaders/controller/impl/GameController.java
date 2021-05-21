@@ -1,13 +1,13 @@
 package com.game.galaxyInvaders.controller.impl;
 
-import com.game.galaxyInvaders.controller.IGameController;
+import com.game.galaxyInvaders.desacople.IGameController;
 import com.game.galaxyInvaders.controller.iterator.impl.AgregateConcrete;
 import com.game.galaxyInvaders.controller.threads.AnimationEnemyThread;
 import com.game.galaxyInvaders.controller.threads.EnemiesCreateShotThread;
 import com.game.galaxyInvaders.controller.threads.EnemiesShotThread;
 import com.game.galaxyInvaders.controller.threads.MoveEnemyThread;
 import com.game.galaxyInvaders.controller.util.AppSystemProperties;
-import com.game.galaxyInvaders.models.GameContext;
+import com.game.galaxyInvaders.controller.GameContext;
 import com.game.galaxyInvaders.models.Level;
 import com.game.galaxyInvaders.view.WindowSingleton;
 import com.game.galaxyInvaders.view.windows.factory.dialog.IDialog;
@@ -55,17 +55,18 @@ public class GameController implements IGameController {
 
     @Override
     public void startGame() {
-        GameContext.getInstance().setLevel(new Level(1));
-        GameContext.getInstance().setEnemies(new AgregateConcrete());
-        GameContext.getInstance().setAnimationEnemyThread(new AnimationEnemyThread());
-        GameContext.getInstance().getAnimationEnemyThread().start();
-        GameContext.getInstance().setMoveEnemyThread(new MoveEnemyThread());
-        GameContext.getInstance().getMoveEnemyThread().start();
+        GameContext game = GameContext.getInstance();
+        game.setLevel(new Level(1));
+        game.setEnemies(new AgregateConcrete());
+        game.setAnimationEnemyThread(new AnimationEnemyThread());
+        game.getAnimationEnemyThread().start();
+        game.setMoveEnemyThread(new MoveEnemyThread());
+        game.getMoveEnemyThread().start();
         WindowSingleton.getInstance().changePanel("game");
-        GameContext.getInstance().setEnemiesCreateShotThread(new EnemiesCreateShotThread());
-        GameContext.getInstance().setEnemiesShotThread(new EnemiesShotThread());
-        GameContext.getInstance().getEnemiesCreateShotThread().start();
-        GameContext.getInstance().getEnemiesShotThread().start();
+        game.setEnemiesCreateShotThread(new EnemiesCreateShotThread());
+        game.setEnemiesShotThread(new EnemiesShotThread());
+        game.getEnemiesCreateShotThread().start();
+        game.getEnemiesShotThread().start();
     }
 
     @Override

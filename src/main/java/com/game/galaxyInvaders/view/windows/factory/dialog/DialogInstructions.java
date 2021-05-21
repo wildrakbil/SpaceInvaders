@@ -1,6 +1,7 @@
 package com.game.galaxyInvaders.view.windows.factory.dialog;
 
 import com.game.galaxyInvaders.view.windows.factory.button.ButtonAccept;
+import com.game.galaxyInvaders.view.windows.factory.button.IButton;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,10 +20,10 @@ public class DialogInstructions extends JDialog implements ActionListener {
         this.getContentPane().setBackground(new Color(28, 28, 28));
         this.getRootPane().setBorder(BorderFactory.createLineBorder(Color.WHITE));
 
-        JButton buttonAceptar = new ButtonAccept(235, 270).getButton();
-        buttonAceptar.addActionListener(this);
+        IButton buttonAccept = new ButtonAccept(235, 270);
+        buttonAccept.getButton().addActionListener(this);
 
-        this.add(buttonAceptar);
+        this.add(buttonAccept.getButton());
     }
 
     @Override

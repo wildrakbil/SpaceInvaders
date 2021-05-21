@@ -1,6 +1,6 @@
 package com.game.galaxyInvaders.view;
 
-import com.game.galaxyInvaders.controller.util.WindowsController;
+import com.game.galaxyInvaders.controller.WindowsController;
 
 import javax.swing.*;
 import java.awt.*;

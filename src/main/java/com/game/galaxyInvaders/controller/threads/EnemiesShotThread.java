@@ -1,13 +1,13 @@
 package com.game.galaxyInvaders.controller.threads;
 
-import com.game.galaxyInvaders.controller.IShotControler;
+import com.game.galaxyInvaders.desacople.IShotControler;
 import com.game.galaxyInvaders.controller.impl.ShotControler;
 import com.game.galaxyInvaders.controller.iterator.IIterator;
 import com.game.galaxyInvaders.controller.state.context.AlertStateContext;
 import com.game.galaxyInvaders.controller.state.impl.DeadState;
 import com.game.galaxyInvaders.controller.state.impl.Survival2State;
 import com.game.galaxyInvaders.controller.state.impl.SurvivalState;
-import com.game.galaxyInvaders.models.GameContext;
+import com.game.galaxyInvaders.controller.GameContext;
 import com.game.galaxyInvaders.models.prototype.Enemy;
 
 /**

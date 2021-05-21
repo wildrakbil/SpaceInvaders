@@ -1,7 +1,7 @@
 package com.game.galaxyInvaders.view.windows.abstractFactory.components;
 
 import com.game.galaxyInvaders.view.windows.factory.label.LabelBackGroundGif;
-import com.game.galaxyInvaders.view.windows.factory.panel.PanelInstructions;
+import com.game.galaxyInvaders.view.windows.factory.panel.PanelHome;
 import com.game.galaxyInvaders.view.windows.factory.panel.PanelTitle;
 
 import javax.swing.*;
@@ -19,7 +19,7 @@ public class HomeJPanel extends JPanel implements IJPanel {
 
         add(new PanelTitle().getPanel(), BorderLayout.NORTH);
         add(new LabelBackGroundGif("./src/main/resources/gif/menuinicio.gif").getLabel(), BorderLayout.CENTER);
-        add(new PanelInstructions().getPanel(), BorderLayout.SOUTH);
+        add(new PanelHome().getPanel(), BorderLayout.SOUTH);
     }
 
     @Override
